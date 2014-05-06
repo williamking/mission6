@@ -1,0 +1,41 @@
+#main {
+  width: 230px;
+  height: 55px;
+  box-shadow: 3px 3px 5px #303030;
+  -moz-box-shadow: 3px 3px 5px #303030;
+  -webkit-box-shadow: 3px 3px 5px #303030;
+  background-image: url("../pic/triangle.png");
+}
+#main img {
+  width: 70px;
+  height: 50px;
+  display: inline-block;
+}
+#main .user {
+  margin: auto 0;
+  display: inline-block;
+}
+#main .user .id {
+  margin: 5px, 5px, 5px, 5px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+#main .user .id span {
+  font-size: 5px;
+  color: #808080;
+}
+#main .user text {
+  font-size: 14px;
+  display: block;
+}
+#main .picture {
+  display: inline-block;
+}
+#main .picture img {
+  margin: 2px, 0, 2px, 0;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  display: block;
+}

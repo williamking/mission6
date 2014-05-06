@@ -1,0 +1,51 @@
+@width: 70px;
+@height: 50px;
+@fontColor : grey;
+@mainHeight: 50px;
+@mainWidth: 230px;
+.box-shadow (@x: 0, @y: 0, @blur: 5px, @color: #303030) {
+    box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -webkit-box-shadow: @arguments;
+}
+
+#main {
+    width: @mainWidth;
+    height: @height + 5px;
+    .box-shadow(3px, 3px);
+	background-image: url("../pic/triangle.png");
+	img {
+      width: @width;
+      height: @height;
+      display: inline-block;
+	}
+	.user {
+	  margin: auto 0;
+	  display: inline-block;
+	  .id {
+	    margin: 5px, 5px, 5px, 5px;
+	    display: inline-block;
+	    font-size: 15px;
+	    font-weight: bold;
+	    span {
+	      font-size: 5px;
+          color: @fontColor;
+	    }
+	  }
+	  text {
+	    font-size: 14px;
+	    display: block;
+	  }
+	}
+	.picture {
+	  display: inline-block;
+	  img {
+	    margin: 2px, 0, 2px, 0;
+	    display: block;
+	    text-align: center;
+	    width: (@mainHeight / 2);
+        height: (@mainHeight / 2);
+	  	display: block;
+	  }
+	}
+}
